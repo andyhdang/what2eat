@@ -234,7 +234,7 @@ submitBtn.addEventListener('click', () => { //when the submit button is clicked 
         console.log(foodArray);
 
         quiz.innerHTML = `
-        <h2> Looks like you're craving: </h2>
+        <h2> You should eat: </h2>
         <h2> ${foodArray[0].name} </h2>
         <img src="${foodArray[0].image}" alt="${foodArray[0].name}">
         <!--
