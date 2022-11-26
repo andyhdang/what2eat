@@ -26,6 +26,7 @@ body {
 
 h2 {
     text-align: center;
+    margin-top: 0;
 }
 
 ul {
@@ -69,15 +70,12 @@ button:hover {
     background-color: rgb(191, 60, 13);
 }
 
-#myProgress {
-    width: 100%;
-    background-color: grey;
-    border-radius: 1rem;
+.progress {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
 }
 
-#myBar {
-    width: 1%;
-    height: .5rem;
-    background-color: green;
-    border-radius: 1rem;
+p {
+    margin-bottom: 0;
 }

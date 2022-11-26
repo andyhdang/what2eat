@@ -128,12 +128,21 @@ const imgEls = document.querySelectorAll(".image")
 const a_img = document.getElementById('a_img')
 const b_img = document.getElementById('b_img')
 
-const barEl = document.getElementById('myBar')
+const currentPage = document.getElementById('current-page')
+const totalPages = document.getElementById('total-pages')
 
 let currentQuiz = 0
-
+let progress = 1
 
 loadQuiz()
+
+function moveProgress() {
+
+    if (progress <= quizData.length) {
+        currentPage.innerText = progress
+        progress++
+    }
+}
 
 function shuffle(array) {
     let currentIndex = array.length, randomIndex;
@@ -155,11 +164,13 @@ function shuffle(array) {
 
 function loadQuiz() {
     deslectAnswers() //deselect all answers from previous question
+    moveProgress()
 
     const currentQuizData = quizData[currentQuiz]
     questionEl.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
+    totalPages.innerText = quizData.length
 
     for (let i = 0; i < foodArray.length; i++) {
         if (currentQuizData.a == foodArray[i].name) {
