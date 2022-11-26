@@ -2,32 +2,32 @@ const foodArray = [
     {
         name: "sushi",
         score: 0,
-        image: "/images/sushi.jpg",
+        image: "images/sushi.jpg",
     },
     {
         name: "pasta",
         score: 0,
-        image: "/images/pasta.jpg",
+        image: "images/pasta.jpg",
     },
     {
         name: "tacos",
         score: 0,
-        image: "/images/tacos.jpg",
+        image: "images/tacos.jpg",
     },
     {
         name: "fried chicken",
         score: 0,
-        image: "/images/fried-chicken.jpg",
+        image: "images/fried-chicken.jpg",
     },
     {
         name: "burgers",
         score: 0,
-        image: "/images/burgers.jpg",
+        image: "images/burgers.jpg",
     },
     {
         name: "pizza",
         score: 0,
-        image: "/images/pizza.jpg",
+        image: "images/pizza.jpg",
     },
 
 
